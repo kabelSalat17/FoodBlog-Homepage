@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--main-font)
+}
+
+:root{
+    /* Colors */
+    --smoky-black:#0E0F19;
+    --bubble-gum: #F8C7CC;
+    --green:#81A684;
+    /* Font-family */
+    --main-font: 'Concert One', cursive;
+    --font-logo: 'Amatic SC', cursive;
+
+}
+/* Global */
+
+a{
+    text-decoration: none;
+    color: var(--smoky-black);
+}
+
+ul{
+    list-style: none;
+}
+
+.flex-row{
+    display: flex;
+    flex-wrap: wrap; /* collape social links*/
+}
+
+.text-color{
+    color: var(--smoky-black);
+}
+
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 0.25em 1.25em;
+    cursor: pointer;
+    outline: none;
+}
+
+.container{
+    margin: 0 5vw;
+}
+
+
+/* Global */
+
+/* Navbar */
+
+nav{
+    background: var(--green);
+    padding: 0 2em;
+    height: 0rem;
+    min-height: 10vh;
+    overflow: hidden;
+    transition: height 0.75s ease-in-out;
+}
+
+nav .nav-menu{
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 1em;
+}
+/* collapse menu */
+nav .toggle-collapse{
+    position: absolute;
+    top: 1em;
+    right: 2em;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: var(--smoky-black);
+    display: none;
+}
+
+nav .toggle-collapse .toggle-icon{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.collapse{
+    height: 18em;
+}
+
+/* /collapse menu */
+
+nav .nav-items{
+    display: flex;
+}
+
+.nav-items .nav-link{
+    padding: 0.5em 0.5em;
+    margin-left: 1.25em;
+    font-size: 1rem;
+}
+
+
+.nav-items .nav-link:hover{
+    background-color: var(--bubble-gum);
+}
+
+
+nav .nav-logo a {
+    font-size: 2rem;
+    font-family: var(--font-logo);
+}
+
+.nav-menu .social{
+    font-size: 1.25rem;
+}
+
+.social i{
+    padding: 0 0.2em;
+}
+
+.social i:hover{
+    color: var(--bubble-gum);
+}
+
+/* /Navbar */
+
+/* Main */
+
+/* Title */
+
+main{
+    background-image: url('../assets/bg.jpg'); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+main .title-section{
+
+    background-position: right;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .first-page{
+    text-align: center;
+    color: var(--bubble-gum);
+    font-size: 2.25rem;
+    
+}
+
+main h1,h3{
+    margin: 0.15em;
+}
+
+main .btn {
+    margin-top: 1.25em;
+    background-color: var(--bubble-gum);
+    font-family: var(--font-logo);
+    font-size: 1.5rem;
+}
+
+main .btn:hover{
+    background-color: var(--green);
+}
+
+/* /Title */
+
+/* Blog carousel */
+
+main .blog{
+    height: 110vh;
+    background-position: top;
+}
+
+main .blog .blog-post{
+    padding-top: 8em;
+}
+
+main .blog .blog-content{
+    background-color: var(--bubble-gum);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 1em;
+    box-shadow: 0 15px 20px rgba(0, 0,0,0.2);
+}
+
+main .blog-content .blog-title{
+    padding: 2em 0;
+}
+
+main .blog-content span{
+    display: block;
+}
+
+
+main .blog-content .btn-blog{
+    color: whitesmoke;
+    background-color: #4E3535;
+    padding: 0.2em .75em;
+    margin: .5em;
+}
+
+main .blog-content .btn-blog:hover{
+    color: var(--smoky-black);
+    background-color: var(--green);
+}
+
+section .container .owl-nav{
+    position: absolute;
+    top: 5%;
+    margin: 0 auto;
+    width: 100%;
+    background: transparent;
+    color: var(--green);
+    
+}
+
+.owl-nav .owl-prev .owl-nav-prev,
+.owl-nav .owl-next .owl-nav-next {
+    color: var(--bubble-gum);
+    background: transparent;
+    font-size: 1.5em;
+}
+
+.owl-theme .owl-nav .owl-prev{
+    outline: none;
+}
+
+.owl-theme .owl-nav .owl-nav-prev{
+    outline: none;
+
+}
+
+.owl-theme .owl-nav .owl-next{
+    outline: none;
+
+}
+
+.owl-theme .owl-nav .owl-nav-next{
+    outline: none;
+
+}
+.owl-theme .owl-nav .owl-prev:hover{
+    background: transparent;
+}
+
+.owl-theme .owl-nav .owl-nav-prev:hover{
+    background: transparent;
+}
+
+.owl-theme .owl-nav .owl-next:hover{
+    background: transparent;
+}
+
+.owl-theme .owl-nav .owl-nav-next:hover{
+    background: transparent;
+}
+/* /Blog carousel */
+
+/* Content */
+
+main .site-content .posts{
+    width: 40%;
+}
+
+/* /Content */
+
+/* /Main */
+
+/* Footer */
+
+footer{
+    padding-top: 2em;
+    height: 100%;
+    background: var(--green);
+    position: relative;
+}
+
+.motto{
+    text-align: center;
+    padding-bottom: 2em;
+
+}
+
+footer .container{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+footer .container h2{
+    color: var(--smoky-black);
+}
+
+footer .newsletter .form-element{
+    background: whitesmoke;
+    display: inline-block;
+}
+
+.form-element input{
+    border: 2px red solid;
+    padding: .5rem .7rem;
+    border: none;
+    background: transparent;
+    color: var(--smoky-black);
+    font-family: var(--font-logo);
+    font-size: 1rem;
+    width: 75%;
+    outline: none;
+
+}
+
+footer .newsletter .form-element span{
+    padding: .5rem .7rem;
+    cursor: pointer;
+}
+
+
+footer .copyrights{
+    margin-top: 1.5em;
+    padding-bottom: 1.5em;
+    justify-content: center;
+    text-align: center;
+    font-family: var(--bubble-gum);
+}
+
+footer.footer .copyrights h4 a{
+    color: var(--white);
+}
+
+
+/* less or equal to 950px */
+
+@media only screen and (max-width:950px){
+    nav .nav-menu, nav .nav-items{
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .nav-logo{
+        position: absolute;
+        left: 2em;
+    }
+
+    nav .nav-items{
+        margin-top: 3em;
+    }
+
+    nav .toggle-collapse{
+        display: block;
+    }
+    .nav-items .nav-link:last-child{
+        margin-bottom: 0.3em;
+    }
+
+    main .title-section{
+        background-position: initial;
+    }
+
+}
